@@ -1,0 +1,20 @@
+# .air.toml
+[build]
+  cmd = "go build -o ./bin/app ./cmd/main.go"
+  bin = "./bin/app"
+  include_dir = ["cmd", "db", "config" , "handler", "model", "repository", "routes", "service", "middleware", "pkg", "enum"]
+  exclude_dir = ["bin", "vendor"]
+
+[watch]
+  ignore = ["*.md", "*.toml", "*.gitignore", "*.log"]
+  include_ext = ["go"]
+
+[color]
+  main = "yellow"
+  watcher = "cyan"
+  build = "green"
+  log = "blue"
+
+[logger]
+  time_format = "2006-01-02 15:04:05"
+  time_zone = "Local"

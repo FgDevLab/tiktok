@@ -1,0 +1,59 @@
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build directories
+bin/
+build/
+dist/
+out/
+tmp/
+
+# Go test binary, build with `go test -c`
+*.test
+
+# Dependency directories
+vendor/
+Gopkg.lock
+Gopkg.toml
+package-lock.json
+pnpm-lock.yaml
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+*.swp
+*.swo
+.DS_Store
+
+# OS-specific files
+*.log
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.sql
+*.sqlite
+*.db
+*.sqlite3
+*.pem
+*.key
+
+# Configs
+.env
+.env.*.local
+*.local
+config.yaml
+
+# Go module cache
+.golangci.yml
+.golangci-lint-cache/
+.golangci-lint
